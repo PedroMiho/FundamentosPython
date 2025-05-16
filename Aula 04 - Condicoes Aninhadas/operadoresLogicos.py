@@ -1,26 +1,30 @@
-#Exercicio 1: Login e Senha
-loginSalvo = "pedromiho"
-senhaSalva = "1234"
+#Cadastro Usuario
+loginSalvo = "admin"
+senhaSalva = "admin"
 
-loginUser = input("Digite o seu login: ").lower()
-senhaUser = input("Digite a sua senha: ")
+#Acessar a conta
+login = input("Digite o seu login: ")
+senha = input("Digite a sua senha: ")
 
-if loginUser == loginSalvo and senhaUser == senhaSalva:
-    print("Pode jogar, Clash Royale")
+if login == loginSalvo and senha == senhaSalva:
+    print("Acesso Liberado")
 else:
-    print("Login e Senha invalidos")
+    print("Acesso Negado")
     
+#Crie um programa que verifique se um aluno foi aprovado.
+#Para o aluno ser aprovado ele deve ter:
+# Média >= 70
+# Frequência >= 75
 
-#Exercicio 2: Nota e frequência
-nota = int(input("Digite a sua nota:"))
-frequencia = int(input("Digite a sua frequencia:"))
+n1 = int(input("Digite uma nota: "))
+n2 = int(input("Digite uma nota: "))
+frequencia = int(input("Digite a sua frequência: "))
 
-notaMinima = 50
-frequenciaMinima = 75
 
-if nota < 40 or frequencia < frequenciaMinima:
-    print("Volte ano que vem")
-elif nota >= notaMinima and frequencia >= frequenciaMinima:
+media = (n1 + n2) / 2
+
+if media >= 70 and frequencia >= 75:
     print("Aprovado")
-elif nota >= 40 and nota < 50: 
-    print("Recuperação")
+else :
+    print("Reprovado")
+    

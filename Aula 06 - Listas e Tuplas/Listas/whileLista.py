@@ -1,14 +1,14 @@
-lista = []
+listaNumero = []
 
 while True:
-    usuario = int(input("Digite um valor para adicionar na lista: "))
-    if usuario == 999:
+    
+    numero = int(input("Digite um número ou 999 para parar: "))
+    
+    if numero == 999:
+        print("FIM")
         break
-    else:
-        lista.append(usuario)
-print(lista)
-
-
-#Percorrendo uma lista:
-for valor in lista:
-    print(valor)
+    
+    listaNumero.append(numero)
+    
+    for num in listaNumero:
+        print(num)
